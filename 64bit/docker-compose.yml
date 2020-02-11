@@ -1,0 +1,11 @@
+version: '3'
+services:
+  centos-7-64bit:
+    build:
+        context: ../
+        dockerfile: ./64bit/Dockerfile
+    container_name: centos-7-64bit
+    volumes:
+       - ./workspace:/root/workspace
+    stdin_open: true
+
