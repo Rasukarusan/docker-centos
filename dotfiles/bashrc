@@ -1,21 +1,3 @@
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US:
-alias ls='ls --color=auto'
-alias l='ls --color=auto -ltr'
-alias la='ls -la'
-alias laa='ls -ld .*'
-alias ll='ls -l'
-alias llh='ls -lh'
-alias grep='grep --color=auto'
-alias his='history -E -i 1 | fzf'
-alias grepr='grep -r'
-alias ..='cd ..'
-alias ...='cd ../../'
-alias cdd='cd ~'
-alias bashrc='vim ~/.bashrc'
-alias sbash='source ~/.bashrc'
-alias vimrc='vim ~/.vimrc'
-alias fin='echo `ls -t | head -n 1`'
-alias fin='echo `ls -t | head -n 1`'
-alias late='less $(echo `ls -t | head -n 1`)'
-alias bit='getconf LONG_BIT'
+# 自作dccコマンドでログインする時はbash固定なので、bashでログインしたあとzshにする
+# dccコマンドを拡張or変更するのは面倒なためコンテナ単位で対応する
+zsh
