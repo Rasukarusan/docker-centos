@@ -1,4 +1,6 @@
 FROM i386/centos:6
+ENV HOME /root
+WORKDIR ${HOME}
 RUN sed -i 's/$basearch/i386/g' /etc/yum.repos.d/CentOS-*.repo
 
 RUN yum -y update \
