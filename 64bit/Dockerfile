@@ -1,13 +1,16 @@
 FROM centos:7
-RUN yum -y update && yum -y install \
-  vim \
-  less \
-  ltrace \
-  gcc \
-  make \
-  zsh \
-  git \
-  wget
+
+RUN yum -y update \
+    && yum -y install \
+        vim \
+        less \
+        ltrace \
+        gcc \
+        make \
+        zsh \
+        git \
+        wget \
+        gdb
 RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 RUN mkdir -p /root/.vim/colors
 RUN mkdir /root/workspace /root/.zsh
