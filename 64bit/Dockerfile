@@ -1,4 +1,6 @@
 FROM centos:7
+ENV HOME /root
+WORKDIR ${HOME}
 
 RUN yum -y update \
     && yum -y install \
